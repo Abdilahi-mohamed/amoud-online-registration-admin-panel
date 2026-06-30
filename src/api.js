@@ -23,9 +23,6 @@ api.interceptors.request.use((config) => {
 export const loginUser = (username, password) =>
     api.post('/auth/login', { username, password });
 
-export const registerAdmin = (username, password) =>
-    api.post('/auth/register', { username, password, role: 'admin' });
-
 // ─── Admin Endpoints ───────────────────────────────────────────────────────────
 export const getAdminDashboard = () =>
     api.get('/admin/dashboard');
